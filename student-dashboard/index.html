@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Student Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <h2>Student Dashboard</h2>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#tasks">Tasks</a></li>
+                <li><a href="#weather">Weather</a></li>
+                <li><a href="#notes">Notes</a></li>
+            </ul>
+
+            <button id="theme-toggle">🌙</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Welcome, Divyanshi 👋</h1>
+        <p>Manage your tasks, notes, and daily activities efficiently.</p>
+    </section>
+
+    <!-- Dashboard Cards -->
+    <section class="dashboard-cards">
+
+        <div class="card">
+            <h3>Total Tasks</h3>
+            <p id="task-count">0</p>
+        </div>
+
+        <div class="card">
+            <h3>Completed Tasks</h3>
+            <p id="completed-count">0</p>
+        </div>
+
+        <div class="card">
+            <h3>Notes Saved</h3>
+            <p id="notes-count">0</p>
+        </div>
+
+    </section>
+
+    <!-- To-Do Section -->
+    <section id="tasks">
+        <h2>Task Manager</h2>
+
+        <div class="todo-box">
+            <input type="text" id="taskInput" placeholder="Enter a task">
+            <button id="addTaskBtn">Add Task</button>
+        </div>
+
+        <ul id="taskList"></ul>
+    </section>
+
+    <!-- Weather Section -->
+    <section id="weather">
+        <h2>Weather</h2>
+
+        <div class="weather-box">
+
+    <div class="weather-search">
+        <input type="text" id="cityInput" placeholder="Enter city">
+        <button id="weatherBtn">Search</button>
+    </div>
+
+    <div class="weather-card">
+        <h3 id="cityName">City</h3>
+        <p id="temperature">Temperature: --</p>
+        <p id="humidity">Humidity: --</p>
+        <p id="condition">Condition: --</p>
+    </div>
+
+</div>
+<p id="wind">Wind Speed: --</p>
+    </section>
+
+    <!-- Notes Section -->
+    <section id="notes">
+        <h2>Quick Notes</h2>
+
+        <textarea id="noteInput"
+                  placeholder="Write your notes here..."></textarea>
+
+        <button id="saveNoteBtn">Save Note</button>
+
+        <div id="notesContainer"></div>
+    </section>
+
+    <footer>
+        <p>© 2026 Smart Student Dashboard | Built by Divyanshi Mittal</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
