@@ -26,12 +26,18 @@
             <li><a href="projects.html">Projects</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
+
+        <button id="theme-toggle">
+            Dark Mode
+        </button>
     </nav>
 </header>
 
 <main>
 
 <section class="hero">
+    <img src="images/profile.jpg" alt="Profile Picture">
+
     <h1>Divyanshi Mittal</h1>
 
     <p>
@@ -39,8 +45,7 @@
         Web Development Enthusiast
     </p>
 
-    <img src="images/profile.jpg"
-         alt="Profile picture of Divyanshi Mittal">
+    <button>Download Resume</button>
 </section>
 
 <section>
@@ -56,15 +61,24 @@
 <section>
     <h2>Featured Projects</h2>
 
-    <article>
-        <h3>Portfolio Website</h3>
-        <p>Personal portfolio built using semantic HTML5.</p>
-    </article>
+    <div class="projects-grid">
 
-    <article>
-        <h3>ShopApp</h3>
-        <p>Inventory and stock management application.</p>
-    </article>
+        <article class="card">
+            <h3>Portfolio Website</h3>
+            <p>Built using semantic HTML5 and accessibility.</p>
+        </article>
+
+        <article class="card">
+            <h3>ShopApp</h3>
+            <p>Inventory management application.</p>
+        </article>
+
+        <article class="card">
+            <h3>Weather Dashboard</h3>
+            <p>Weather application using API integration.</p>
+        </article>
+
+    </div>
 </section>
 
 </main>
@@ -73,5 +87,6 @@
     <p>&copy; 2026 Divyanshi Mittal</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
